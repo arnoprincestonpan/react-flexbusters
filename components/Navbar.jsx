@@ -5,8 +5,8 @@ const Navbar = () => {
             Flexbuster
         </div>
         <div>
-            <input type="text" placeholder="Enter Here..."/>
-            <button>Search</button>
+            <input id="searchBar" type="text" placeholder="Search..."/>
+            <button id="searchButton">Submit</button>
         </div>
     </nav>
   )

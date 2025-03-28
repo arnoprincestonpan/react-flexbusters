@@ -7,6 +7,7 @@ body {
 
 #navBarTop{
   border: 1px solid black;
+  overflow: hidden;
 
   background-color: #1f4489;
   display: flex;
@@ -24,4 +25,20 @@ body {
   font-size: 2em;
   font-weight: 500;
   color: #fcb900;
+}
+
+#searchBar{
+  border: 1px solid #ccc;
+  font-size: 15px;
+  padding: 0.2em;
+}
+
+#searchButton {
+  border: 1px solid black;
+  background-color: #fcb900;
+  color: #32373c;
+  font-size: 15px;
+  margin: 0.2em;
+  padding: 0.2em;
+  cursor: pointer;
 }
