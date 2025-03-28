@@ -56,3 +56,9 @@ footer {
   padding-right: 0.3rem;
   cursor: pointer;
 }
+
+@media screen and (max-width: 600px) {
+  #navBarTop{
+    flex-direction: column;
+  }
+}

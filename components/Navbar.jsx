@@ -4,7 +4,7 @@ const Navbar = () => {
         <div id="logo">
             Flexbuster
         </div>
-        <div>
+        <div id="searchContainer">
             <input id="searchBar" type="text" placeholder="Search..."/>
             <button id="searchButton">Submit</button>
         </div>
