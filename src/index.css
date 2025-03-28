@@ -30,7 +30,7 @@ body {
 #searchBar{
   border: 1px solid #ccc;
   font-size: 15px;
-  padding: 0.2em;
+  padding: 0.15em;
 }
 
 #searchButton {
@@ -39,6 +39,9 @@ body {
   color: #32373c;
   font-size: 15px;
   margin: 0.2em;
-  padding: 0.2em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  padding-left: 0.2em;
+  padding-right: 0.3rem;
   cursor: pointer;
 }
