@@ -1,0 +1,27 @@
+body {
+  background-color: lightgrey;
+  margin: 0;
+
+  box-sizing: border-box;
+}
+
+#navBarTop{
+  border: 1px solid black;
+
+  background-color: #1f4489;
+  display: flex;
+  flex-direction: row;
+
+  padding: 0.5em;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#logo{
+  font-family: 'Bebas Neue', sans-serif;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px #693e36;
+  font-size: 2em;
+  font-weight: 500;
+  color: #fcb900;
+}
