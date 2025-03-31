@@ -23,13 +23,16 @@ const MovieFetcher = () => {
   return (
     <div>
         <h2>Movies</h2>
-        <ul>
+        <ul style={{"display" : "flex", "flexDirection" : "row"}}>
           { movies.map((movie) => (
             <li key={movie.id}>
-              <h3>{movie.title}</h3>
-              <p>{movie.year}</p>
+              <h3>Title: {movie.title}</h3>
+              <img src={movie.poster} alt={movie.title + " poster."}/>
+              <p>Year: {movie.year}</p>
+              <p>Actors: {movie.actors.join(", ")}</p>
+              <p>Genre: {movie.genre.join(", ").toLowerCase()}</p>
             </li>
-          )) }
+          ))}
         </ul>
     </div>
   )
