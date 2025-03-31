@@ -1,4 +1,5 @@
 import React from "react";
+import {useEffect, useState} from 'react';
 
 const CardList = () => {
   const horrorMovies = [
@@ -87,8 +88,23 @@ const CardList = () => {
       return 1;
     }
   };
-    const postersPerRow = calculatePostersPerRow();
-    const moviesToDisplay = horrorMovies.slice(0, postersPerRow);
+
+    const [postersPerRow, setPostersPerRow] = useState(calculatePostersPerRow());
+    const [moviesToDisplay, setMoviesToDisplay] = useState(horrorMovies);
+    const handleResize = () => {
+        const newPostersPerRow = calculatePostersPerRow();
+        setPostersPerRow(newPostersPerRow);
+    }
+    useEffect(() => {
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+    useEffect(() => {
+        const newPostersPerRow = calculatePostersPerRow();
+        setPostersPerRow(newPostersPerRow);
+    }, []);
   return(
     <div>
         <h2 className="movie-genre" style={{marginTop: '20px', fontSize: '24px', fontWeight: 'bold'}}>Horror Movies</h2>
