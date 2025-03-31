@@ -2,40 +2,34 @@ import { useState, useEffect } from 'react';
 
 const MovieFetcher = () => {
   const [movies, setMovies] = useState([]);
-  const genre = 'action';
 
   useEffect(() => {
-    const fetchMovies = async () => {
-      try {
-        const apiKey = process.env.REACT_APP_API_KEY;
-        const response = await fetch(`
-          https://www.omdbapi.com/?apikey=${apiKey}&s=${genre}&type=movie&page=1`
-        )
+    const fetchData = async() => {
+      try{
+        const response = await fetch(`https://www.freetestapi.com/api/v1/movies?limit=5`);
         const data = await response.json();
-
-        // Omdbapi will return a Search Array of Movie Objects
-        if(data.Search){
-          const filteredMovies = data.Search.filter((movie) => 
-          movie.Genre.toLowerCase().includes(genre.toLowerCase()));
-          setMovies(movies);
-        } else {
-          console.error(`No movies found for this genre: ${genre}`);
+        console.log(data);
+        if(data){
+          setMovies(data);
         }
-      } catch (error) {
-        console.error("Error fetching movies:", error);
+      } catch (error){
+        console.log('Fetch Error: ', error);
       }
-    };
+    }
 
-    fetchMovies();
-  }, []); // empty array only runs once when the page loads
+    fetchData();
+  }, []);
 
   return (
     <div>
-        <h2>{genre} Movies</h2>
+        <h2>Movies</h2>
         <ul>
-          {movies.map((movie) => (
-            <li key={movie.imdbID}>{movie.Title}</li>
-          ))}
+          { movies.map((movie) => (
+            <li key={movie.id}>
+              <h3>{movie.title}</h3>
+              <p>{movie.year}</p>
+            </li>
+          )) }
         </ul>
     </div>
   )
