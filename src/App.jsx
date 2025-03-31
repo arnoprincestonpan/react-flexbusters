@@ -1,15 +1,13 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import MovieShelf from "../components/MovieShelf";
-import MovieFetcher from "../components/MovieFetcher";
+import Card from "../components/Card";
 
 function App() {
 
   return (
     <>
       <Navbar/>
-      <MovieFetcher/>
-      <MovieShelf/>
+      <Card/>
       <Footer/>
     </>
   )
