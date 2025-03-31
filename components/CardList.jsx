@@ -1,6 +1,13 @@
 import Card from "./Card"
 
 const CardList = () => {
+
+    const calculateVisiblePosters = (containerWidth, posterWidth) => {
+        if (containerWidth <= 0 || posterWidth <= 0) return 0;
+        return Math.floor(containerWidth / posterWidth);
+    };
+
+
   return (
     <div>
         <h2>Movies</h2>
