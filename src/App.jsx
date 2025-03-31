@@ -75,10 +75,94 @@ function App() {
         "A family seeks to help their comatose son, only to discover that his condition is the result of a demonic possession.",
     },
   ];
+  const actionMovies = [
+    {
+      title: "Mad Max: Fury Road",
+      image_url: "https://upload.wikimedia.org/wikipedia/en/6/6e/Mad_Max_Fury_Road_poster.jpg",
+      description: "In a post-apocalyptic wasteland, a woman rebels against a tyrannical ruler in search for her homeland with the help of a group of female prisoners, a psychotic worshipper, and a drifter named Max Rockatansky.",
+    },
+    {
+      title: "John Wick",
+      image_url: "https://upload.wikimedia.org/wikipedia/en/9/98/John_Wick_Teaser_Poster.jpg",
+      description: "An ex-hitman comes out of retirement to seek revenge against the gangsters who killed his dog, a final gift from his wife.",
+    },
+    {
+      title: "Die Hard",
+      image_url: "https://upload.wikimedia.org/wikipedia/en/8/81/Die_hard_poster.jpg",
+      description: "An NYPD officer tries to save his wife and several others taken hostage by German terrorists during a Christmas party at the Nakatomi Plaza in Los Angeles.",
+    },
+    {
+      title: "The Dark Knight",
+      image_url: "https://upload.wikimedia.org/wikipedia/en/8/8a/Dark_Knight.jpg",
+      description: "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+    },
+    {
+      title: "Mission: Impossible - Fallout",
+      image_url: "https://upload.wikimedia.org/wikipedia/en/f/ff/Mission_Impossible_-_Fallout_poster.jpg",
+      description: "Ethan Hunt and his IMF team, along with some familiar allies, race against time after a mission gone wrong.",
+    },
+  ];
+  const comedyMovies = [
+    {
+      title: "Superbad",
+      image_url: "https://upload.wikimedia.org/wikipedia/en/9/9c/Superbad_Poster.jpg",
+      description: "Two co-dependent high school seniors are forced to deal with separation anxiety as they approach graduation and college.",
+    },
+    {
+      title: "The Hangover",
+      image_url: "https://upload.wikimedia.org/wikipedia/en/b/b9/Hangover_ver3.jpg",
+      description: "Three buddies wake up from a bachelor party in Las Vegas, with no memory of the previous night and the bachelor missing. They make their way around the city in order to find their friend before his wedding.",
+    },
+    {
+      title: "Bridesmaids",
+      image_url: "https://upload.wikimedia.org/wikipedia/en/e/e9/Bridesmaids_%282011_film%29_poster.jpg",
+      description: "Competition between the maid of honor and a bridesmaid, who want to be the bride's best friend, threatens to ruin the engagement celebrations.",
+    },
+    {
+      title: "Monty Python and the Holy Grail",
+      image_url: "https://upload.wikimedia.org/wikipedia/en/9/98/Monty_Python_and_the_Holy_Grail_poster.jpg",
+      description: "King Arthur and his Knights of the Round Table embark on a surreal, low-budget search for the Holy Grail.",
+    },
+    {
+      title: "Shaun of the Dead",
+      image_url: "https://upload.wikimedia.org/wikipedia/en/a/a6/Shaun_of_the_dead_poster.jpg",
+      description: "A salesman decides to turn his life around by making amends with his girlfriend. He has to contend with the recent spillage of zombies onto London.",
+    },
+  ];
+  const animeMovies = [
+    {
+      title: "Your Name.",
+      image_url: "https://upload.wikimedia.org/wikipedia/en/0/0b/Your_Name_poster.png",
+      description: "Two teenagers share a profound, magical connection upon discovering they are swapping bodies. But things get even more complicated when the boy and the girl decide to meet in person.",
+    },
+    {
+      title: "Spirited Away",
+      image_url: "https://upload.wikimedia.org/wikipedia/en/d/de/Spirited_Away_poster.JPG",
+      description: "During her family's move to a new home, a sullen 10-year-old girl wanders into a world ruled by gods, witches, and spirits, and where humans are changed into beasts.",
+    },
+    {
+      title: "Akira",
+      image_url: "https://upload.wikimedia.org/wikipedia/en/5/50/Akira_(1988_film).jpg",
+      description: "A secret military project endangers Neo-Tokyo when it turns a biker gang member into a rampaging psychic psychopath that only two kids and a group of psionics can stop.",
+    },
+    {
+      title: "Princess Mononoke",
+      image_url: "https://upload.wikimedia.org/wikipedia/en/1/1a/Princess_Mononoke_Japanese_poster.jpg",
+      description: "On a journey to find the cure for a Tatarigami curse, Ashitaka finds himself in the middle of a war between the forest gods and a mining colony.",
+    },
+    {
+      title: "Weathering with You",
+      image_url: "https://upload.wikimedia.org/wikipedia/en/0/06/Weathering_with_You_poster.jpg",
+      description: "A high-school boy who has run away to Tokyo befriends a girl who appears to be able to manipulate the weather.",
+    },
+  ];
   return (
     <>
       <Navbar/>
-      <CardList horrorMovies={horrorMovies}/>
+      <CardList movies={actionMovies} genreTitle={"Action"}/>
+      <CardList movies={horrorMovies} genreTitle={"Horror"}/>
+      <CardList movies={comedyMovies} genreTitle={"Comedy"}/>
+      <CardList movies={animeMovies} genreTitle={"Anime"}/>
       <Footer/>
     </>
   )
