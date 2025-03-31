@@ -1,16 +1,14 @@
 import React from 'react'
 
-const Card = () => {
+const Card = ( {posterImageUrl, movieTitle, movieDescription, posterHeight, posterWidth} ) => {
+
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'stretch'}}>
-        <img
-        style={{ maxWidth: "220px", maxHeight: 'auto', objectFit: 'cover', }}
-        src="https://doodleipsum.com/220x310/hand-drawn?bg=D98D63&i=fc84b0151f143a4e725c989e09fdb89c"
-        alt="movie poster"
-        />
-        <div style={{ minWidth: '210px', overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis' }}>
-            <h3>Movie Title</h3>
-        </div>
+    <div className="movie-poster" style={{position: "relative", width: posterWidth, height: posterHeight, overflow: 'hidden', borderRadius: '10px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)'}}>
+      <img src={posterImageUrl} alt="Movie Poster" style={{ width: '100%', height: '100%', objectFit: 'cover' }}/>
+      <div className='poster-info' style={{position: 'absolute', bottom: '0', left: '0', right: '0', backgroundColor: 'rgba(0, 0, 0, 0.7)', color: 'white', padding: '10px', textAlign: 'center'}}> 
+        <p className="movie-title" style={{fontSize: '16px', fontWeight: 'bold'}}>{movieTitle}</p>
+        <p className='movie-description' style={{fontSize: '14px', marginTop: '5px'}}>{movieDescription}</p>
+      </div>
     </div>
   )
 }
