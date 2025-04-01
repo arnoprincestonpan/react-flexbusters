@@ -78,27 +78,27 @@ function App() {
   const actionMovies = [
     {
       title: "Mad Max: Fury Road",
-      image_url: "https://upload.wikimedia.org/wikipedia/en/6/6e/Mad_Max_Fury_Road_poster.jpg",
+      image_url: "https://upload.wikimedia.org/wikipedia/en/6/6e/Mad_Max_Fury_Road.jpg?20171120224637",
       description: "In a post-apocalyptic wasteland, a woman rebels against a tyrannical ruler in search for her homeland with the help of a group of female prisoners, a psychotic worshipper, and a drifter named Max Rockatansky.",
     },
     {
       title: "John Wick",
-      image_url: "https://upload.wikimedia.org/wikipedia/en/9/98/John_Wick_Teaser_Poster.jpg",
+      image_url: "https://upload.wikimedia.org/wikipedia/en/9/98/John_Wick_TeaserPoster.jpg?20180105073428",
       description: "An ex-hitman comes out of retirement to seek revenge against the gangsters who killed his dog, a final gift from his wife.",
     },
     {
       title: "Die Hard",
-      image_url: "https://upload.wikimedia.org/wikipedia/en/8/81/Die_hard_poster.jpg",
+      image_url: "https://upload.wikimedia.org/wikipedia/en/c/ca/Die_Hard_%281988_film%29_poster.jpg?20200708003525",
       description: "An NYPD officer tries to save his wife and several others taken hostage by German terrorists during a Christmas party at the Nakatomi Plaza in Los Angeles.",
     },
     {
       title: "The Dark Knight",
-      image_url: "https://upload.wikimedia.org/wikipedia/en/8/8a/Dark_Knight.jpg",
+      image_url: "https://upload.wikimedia.org/wikipedia/en/1/1c/The_Dark_Knight_%282008_film%29.jpg?20170315171411",
       description: "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
     },
     {
       title: "Mission: Impossible - Fallout",
-      image_url: "https://upload.wikimedia.org/wikipedia/en/f/ff/Mission_Impossible_-_Fallout_poster.jpg",
+      image_url: "https://upload.wikimedia.org/wikipedia/en/f/ff/MI_%E2%80%93_Fallout.jpg?20180531135511",
       description: "Ethan Hunt and his IMF team, along with some familiar allies, race against time after a mission gone wrong.",
     },
   ];
