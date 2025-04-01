@@ -137,22 +137,22 @@ function App() {
     },
     {
       title: "Spirited Away",
-      image_url: "https://upload.wikimedia.org/wikipedia/en/d/de/Spirited_Away_poster.JPG",
+      image_url: "https://upload.wikimedia.org/wikipedia/en/d/db/Spirited_Away_Japanese_poster.png",
       description: "During her family's move to a new home, a sullen 10-year-old girl wanders into a world ruled by gods, witches, and spirits, and where humans are changed into beasts.",
     },
     {
       title: "Akira",
-      image_url: "https://upload.wikimedia.org/wikipedia/en/5/50/Akira_(1988_film).jpg",
+      image_url: "https://upload.wikimedia.org/wikipedia/en/5/5d/AKIRA_%281988_poster%29.jpg?20210803234404",
       description: "A secret military project endangers Neo-Tokyo when it turns a biker gang member into a rampaging psychic psychopath that only two kids and a group of psionics can stop.",
     },
     {
       title: "Princess Mononoke",
-      image_url: "https://upload.wikimedia.org/wikipedia/en/1/1a/Princess_Mononoke_Japanese_poster.jpg",
+      image_url: "https://upload.wikimedia.org/wikipedia/en/8/8c/Princess_Mononoke_Japanese_poster.png",
       description: "On a journey to find the cure for a Tatarigami curse, Ashitaka finds himself in the middle of a war between the forest gods and a mining colony.",
     },
     {
       title: "Weathering with You",
-      image_url: "https://upload.wikimedia.org/wikipedia/en/0/06/Weathering_with_You_poster.jpg",
+      image_url: "https://upload.wikimedia.org/wikipedia/en/6/66/Weathering_with_You_Poster.jpg?20191016173834",
       description: "A high-school boy who has run away to Tokyo befriends a girl who appears to be able to manipulate the weather.",
     },
   ];
