@@ -105,27 +105,27 @@ function App() {
   const comedyMovies = [
     {
       title: "Superbad",
-      image_url: "https://upload.wikimedia.org/wikipedia/en/9/9c/Superbad_Poster.jpg",
+      image_url: "https://upload.wikimedia.org/wikipedia/en/8/8b/Superbad_Poster.png?20171225064235",
       description: "Two co-dependent high school seniors are forced to deal with separation anxiety as they approach graduation and college.",
     },
     {
       title: "The Hangover",
-      image_url: "https://upload.wikimedia.org/wikipedia/en/b/b9/Hangover_ver3.jpg",
+      image_url: "https://upload.wikimedia.org/wikipedia/en/b/b9/Hangoverposter09.jpg?20171226224917",
       description: "Three buddies wake up from a bachelor party in Las Vegas, with no memory of the previous night and the bachelor missing. They make their way around the city in order to find their friend before his wedding.",
     },
     {
       title: "Bridesmaids",
-      image_url: "https://upload.wikimedia.org/wikipedia/en/e/e9/Bridesmaids_%282011_film%29_poster.jpg",
+      image_url: "https://upload.wikimedia.org/wikipedia/en/d/df/BridesmaidsPoster.jpg?20160522003151",
       description: "Competition between the maid of honor and a bridesmaid, who want to be the bride's best friend, threatens to ruin the engagement celebrations.",
     },
     {
       title: "Monty Python and the Holy Grail",
-      image_url: "https://upload.wikimedia.org/wikipedia/en/9/98/Monty_Python_and_the_Holy_Grail_poster.jpg",
+      image_url: "https://upload.wikimedia.org/wikipedia/en/0/08/Monty-Python-1975-poster.png?20180103235354",
       description: "King Arthur and his Knights of the Round Table embark on a surreal, low-budget search for the Holy Grail.",
     },
     {
       title: "Shaun of the Dead",
-      image_url: "https://upload.wikimedia.org/wikipedia/en/a/a6/Shaun_of_the_dead_poster.jpg",
+      image_url: "https://upload.wikimedia.org/wikipedia/en/8/8d/Shaun_of_the_Dead_film_poster.jpg",
       description: "A salesman decides to turn his life around by making amends with his girlfriend. He has to contend with the recent spillage of zombies onto London.",
     },
   ];
